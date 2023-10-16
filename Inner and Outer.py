@@ -1,3 +1,9 @@
+#Run pip install numpy on terminal
+
 import numpy as np
 
-print (np.array([[1,2,3],[4,5,6]]))
+A = np.array(list(map(int, input().split())))
+B = np.array(list(map(int, input().split())))
+
+print(np.inner(A,B))
+print(np.outer(A,B))
