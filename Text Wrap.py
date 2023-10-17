@@ -2,6 +2,8 @@ import textwrap
 
 def wrap(string, max_width):
     text = textwrap.fill(string, max_width)
+    #print(textwrap.fill(string, max_width)) -> ABCD \n EFGH
+    #print(textwrap.wrap(string, max_width)) -> ['ABCD', 'EFGH']
     return text
 
 if __name__ == '__main__':
