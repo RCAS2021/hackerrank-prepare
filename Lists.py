@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    N = int(input())                                     #Action quantity
+    N = int(input())                                     #Actions quantity
     lista = list()                                       #Create empty list
     for _ in range(N):
         option = input().split()                         #Gets option and values, split by a space EX: insert 0 5
