@@ -10,7 +10,7 @@ def print_formatted(number):
     print(bin(number)[2:])
     print(oct(number)[2:])
     print(hex(number)[2:])
-
+    
 if __name__ == '__main__':
     n = int(input())
     print_formatted(n)
