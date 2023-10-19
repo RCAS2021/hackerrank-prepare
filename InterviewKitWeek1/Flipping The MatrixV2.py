@@ -1,16 +1,19 @@
 def flippingMatrix(matrix):
     length = len(matrix)//2
-    result_sum = 0
-
+    arr = []
     for i in range(length):
         for j in range(length):
-            result_sum += max(matrix[i][j], matrix[i][(length*2)-j-1], matrix[(length*2)-i-1][j], matrix[(length*2)-i-1][(length*2)-j-1]) 
-            print(result_sum)
-    print(matrix)
-    print(result_sum)
-       
+            temp = []
+            temp.append(matrix[i][j])
+            temp.append(matrix[i][2*length-j-1])
+            temp.append(matrix[2*length-i-1][j])
+            temp.append(matrix[2*length-i-1][2*length-j-1])
+            arr.append(max(temp))
+
+    print(sum(arr))
 
 if __name__ == '__main__':
+
     q = int(input().strip())
 
     for q_itr in range(q):
