@@ -1,8 +1,8 @@
 from itertools import permutations
 
-S, K = input().split()
+S = input()
 
-lis = sorted(list(permutations(S.upper(), int(K))))
+lis = sorted(list(permutations(S.upper(), len(S))))
 
 for j in lis:
     print("".join(j), sep="\n")
