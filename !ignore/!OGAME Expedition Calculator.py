@@ -1,6 +1,6 @@
 total = []
-for _ in range(11):
+for _ in range(4):
     ship = int(input())
-    total.append(ship//5)
+    total.append(ship//3)
 
 print(total)
