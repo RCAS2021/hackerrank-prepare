@@ -22,24 +22,16 @@ function readLine() {
     return inputString[currentLine++];
 }
 
+function factorial(n){
+    let factorial = 1;
+    for(let i = 1; i <= n; i++)
+        factorial = factorial * i;
+    return factorial;
+}
+
+
 function main() {
-    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
-    const PI = Math.PI;
-    const r = +(readLine());
-    let area = 0;
-    let perimeter = 0;
-    area = PI*(r*r)
-    perimeter = 2*PI*r
-    // Print the area of the circle:
-    console.log(area);
-    // Print the perimeter of the circle:
-    console.log(perimeter);
-    try {    
-        // Attempt to redefine the value of constant variable PI
-        PI = 0;
-        // Attempt to print the value of PI
-        console.log(PI);
-    } catch(error) {
-        console.error("You correctly declared 'PI' as a constant.");
-    }
+    const n = +(readLine());
+    
+    console.log(factorial(n));
 }
