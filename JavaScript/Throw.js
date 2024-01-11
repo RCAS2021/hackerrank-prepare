@@ -56,3 +56,5 @@ function main() {
         }
     }
 }
+
+//throw https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/throw

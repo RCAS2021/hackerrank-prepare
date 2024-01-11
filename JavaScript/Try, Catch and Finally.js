@@ -45,3 +45,8 @@ function main() {
     
     reverseString(s);
 }
+
+//try...catch https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+//split https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+//reverse https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+//join https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
