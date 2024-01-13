@@ -1,13 +1,13 @@
 import math
 
-def isEven(arr):
-    if (len(arr) % 2 != 0):
+def isEven(length):
+    if (length % 2 != 0):
         return 0
     else:
         return 1
         
 def median(arr):
-    if (isEven(arr) == 0):
+    if (isEven(len(arr)) == 0):
         return arr[len(arr)//2]
     else:
         return (arr[len(arr)//2-1] + arr[len(arr)//2]) /2
@@ -25,7 +25,7 @@ def interQuartile(values, freqs):
     half = math.floor(len(S)/2)
     for i in range(0, half):
         arrQ1.append(S[i])
-    if (isEven(S) == 0):
+    if (isEven(len(S)) == 0):
         for i in range(half+1, len(S)):
             arrQ3.append(S[i])
     else:

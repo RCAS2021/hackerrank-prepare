@@ -1,13 +1,13 @@
 import math
 
-def isEven(arr):
-    if (len(arr) % 2 != 0):
+def isEven(length):
+    if (length % 2 != 0):
         return 0
     else:
         return 1
         
 def median(arr):
-    if (isEven(arr) == 0):
+    if (isEven(len(arr)) == 0):
         return arr[len(arr)//2]
     else:
         return (arr[len(arr)//2-1] + arr[len(arr)//2]) //2
@@ -20,7 +20,7 @@ def quartiles(arr):
     half = math.floor(len(arr)/2)
     for i in range(0, half):
         arrQ1.append(arr[i])
-    if (isEven(arr) == 0):
+    if (isEven(len(arr)) == 0):
         for i in range(half+1, len(arr)):
             arrQ3.append(arr[i])
     else:
