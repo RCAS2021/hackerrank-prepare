@@ -1,0 +1,41 @@
+Basic Probability -
+Task
+In a single toss of  fair (evenly-weighted) six-sided dice, find the probability that their sum will be at most 9.
+
+Total = 6 * 6 = 36 <= Total possible combinations
+P(>=10) => (4,6) (5,5) (5, 6) (6,4) (6,5) (6,6) = 6 <= Possible combinations to sums >= 10
+P(<=9) => 36 - P(P>=10) = 36 - 6 = 30 <= Total possible combinations to sums <= 9 (Total - P(>=10))
+P(T) = 30/36 = 5/6 <= Probability of sums <= 9 (P(<=9) / Total)
+
+More Dice -
+Task
+In a single toss of  fair (evenly-weighted) six-sided dice, find the probability that the values rolled by each die will be different and the two dice have a sum of 6.
+
+Total = 6 * 6 = 36 <= Total possible combinations
+P(a!=b & sum == 6) => (1,5) (2,4) (5,1) (4,2) = 4 <= Possible combinations of different values and sum = 6
+P(T) = 4/36 = 1/9 <= Probability of different values and sum = 6 (Possible combinations / Total)
+
+Compound Event Probability -
+Task
+There are 3 urns labeled X, Y, and Z.
+
+
+Urn 1 contains 4 red balls and 3 black balls.
+Urn 2 contains 5 red balls and 4 black balls.
+Urn 3 contains 4 red balls and 4 black balls.
+
+One ball is drawn from each of the 3 urns. What is the probability that, of the 3 balls drawn, 2 are red and 1 is black?
+
+P(1B1) => 3/7 <= Probability of 1 black ball on urn 1
+P(1B2) => 4/9 <= Probability of 1 black ball on urn 2
+P(1B3) => 1/2 <= Probability of 1 black ball on urn 3
+
+P(1R1) => 4/7 <= Probability of 1 red ball on urn 1
+P(1R2) => 5/9 <= Probability of 1 red ball on urn 2
+P(1R3) => 1/2 <= Probability of 1 red ball on urn 3
+
+P(RRB) => (4/7)*(5/9)*(1/2) <= Probability of red ball on urn 1 and 2 and black ball on urn 3
+P(RBR) => (4/7)*(3/7)*(1/2) <= Probability of red ball on urn 1 and 3 and black ball on urn 2
+P(BRR) => (3/7)*(5/9)*(1/2) <= Probability of red ball on urn 2 and 3 and black ball on urn 1
+
+P(T) => P(RRB) + (PRBR) + P(BRR) = 20/126 + 16/126 + 15/126 = 51/126 = 17/42
