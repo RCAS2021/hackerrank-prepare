@@ -38,4 +38,4 @@ P(RRB) => (4/7)*(5/9)*(1/2) <= Probability of red ball on urn 1 and 2 and black 
 P(RBR) => (4/7)*(3/7)*(1/2) <= Probability of red ball on urn 1 and 3 and black ball on urn 2
 P(BRR) => (3/7)*(5/9)*(1/2) <= Probability of red ball on urn 2 and 3 and black ball on urn 1
 
-P(T) => P(RRB) + (PRBR) + P(BRR) = 20/126 + 16/126 + 15/126 = 51/126 = 17/42
+P(T) => P(RRB) + P(RBR) + P(BRR) = 20/126 + 16/126 + 15/126 = 51/126 = 17/42
