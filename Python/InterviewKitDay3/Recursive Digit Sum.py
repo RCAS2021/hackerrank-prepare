@@ -26,15 +26,15 @@
 
 #With recursion
 def superDigit(n, k):
-    p = list(n)
+    p = list(n) #transform string into list
     
     for i in range(len(p)):
-        p[i] = int(p[i])
+        p[i] = int(p[i])  #transform list values to integers
         
-    s = sum(p)
-    s *= k
+    s = sum(p) #sum list values
+    s *= k #multiply sum result
 
-    while (s > 9):
+    while (s > 9): #while sum > 9 (single digit), repeat
         s = superDigit(str(s), 1)
     return s
 
