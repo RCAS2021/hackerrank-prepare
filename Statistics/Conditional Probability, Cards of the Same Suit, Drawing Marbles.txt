@@ -1,0 +1,21 @@
+Task
+Suppose a family has 2 children, one of which is a boy. What is the probability that both children are boys?
+
+Possible combinations = BB BG GB GG
+Knowing there is at least one boy = BB BG GB (-GG)
+Probability = BB BG GB = 1/3
+
+Task
+You draw 2 cards from a standard 52-card deck without replacing them. What is the probability that both cards are of the same suit?
+Each suit has 13 cards
+Probability of choosing one suit card = 13/52
+if we take one card of one suit -> the probability of choosing one card of the same suit = 12/51 -> one was taken and not put back
+
+Task
+A bag contains 3 red marbles and 4 blue marbles. Then, 2 marbles are drawn from the bag, at random, without replacement. 
+If the first marble drawn is red, what is the probability that the second marble is blue?
+
+P(R) = 3/7 <= Probability of red marbles
+P(B) = 4/7 <= Probability of blue marbles
+
+1 is taken from the bag, then P(R) = 2/6 and P(B) = 4/6 = 2/3
