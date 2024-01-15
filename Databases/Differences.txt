@@ -1,0 +1,23 @@
+Relation R(A,B,C) has the following tuples:
+
+A B C
+1 2 3
+4 2 3
+4 5 6
+2 5 3
+1 2 6
+
+and relation S(A,B,C) has the following tuples:
+
+A B C
+2 5 3
+2 5 4
+4 5 6
+1 2 3
+
+The differences (R-S) is computed and the following tuple is found to be present in the result. Assume that the schema of the result is (A,B,C).
+
+4, b, c
+
+Answer: 2, 3 <= There are two tuples which start with 4 in R and one in S. The first tuple in R = 4, 2, 3 and the second = 4, 5, 6. The tuple in S = 4, 5, 6. The difference between them (R-S)
+is the tuple that is not in both, so (R-S) which starts with an 4 = 4, 2, 3.

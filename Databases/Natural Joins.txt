@@ -1,0 +1,22 @@
+Relation R(A,C) has the following tuples:
+
+A : C
+3,3
+16,4
+12,3
+3,15
+27,1
+
+Relation S(B,C,D) has the following tuples:
+
+B : C : D
+50,1,6
+1,55,8
+4,3,9
+
+The following tuple is in the result of the natural join between R and S where tuples are structured as (A,B,C,D):
+
+27, X, Y, Z
+
+Answer: X = 50, Y = 1, Z = 6 <= Find the A:C where there is a 27 = (27,1). Then, on S(B, C, D), the tuple where C = 1 (A(27,1) = A(A,C)), returning the tuple 50(B), 1(C), 6(D)
+
