@@ -18,4 +18,4 @@ If the first marble drawn is red, what is the probability that the second marble
 P(R) = 3/7 <= Probability of red marbles
 P(B) = 4/7 <= Probability of blue marbles
 
-1 is taken from the bag, then P(R) = 2/6 and P(B) = 4/6 = 2/3
+1 red marble is taken from the bag, then P(R) = 2/6 and P(B) = 4/6 = 2/3
