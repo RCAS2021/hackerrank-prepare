@@ -1,0 +1,5 @@
+Problem:
+Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+
+Answer:
+select sum(ct.population) from city as ct join country as cnt on ct.countrycode = cnt.code where continent = 'Asia'
