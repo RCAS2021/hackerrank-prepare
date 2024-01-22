@@ -1,0 +1,34 @@
+Problem:
+Harry Potter and his friends are at Ollivander's with Ron, finally replacing Charlie's old broken wand.
+
+Hermione decides the best way to choose is by determining the minimum number of gold galleons needed to buy each non-evil wand of high power and age. 
+Write a query to print the id, age, coins_needed, and power of the wands that Ron's interested in, sorted in order of descending power. 
+If more than one wand has same power, sort the result in order of descending age.
+
+Answer:
+select
+    wa.id,
+    wp.age,
+    wa.coins_needed,
+    wa.power
+from
+    wands as wa
+        join
+    wands_property as wp
+    on wp.code = wa.code
+where
+    wp.is_evil = 0
+        and
+    wa.coins_needed =
+    (
+    select
+        min(sub.coins_needed) 
+    from 
+        wands as sub
+    where
+        sub.code = wa.code
+            and
+        sub.power = wa.power
+    ) 
+order by 
+    wa.power desc, wp.age desc
